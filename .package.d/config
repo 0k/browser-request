@@ -1,0 +1,5 @@
+NAME="@0k.io/browser-request"
+DESCRIPTION="Browser request implementation"
+EMAIL="valentin.lab@kalysto.org"
+AUTHOR="Valentin LAB"
+AUTHOR_EMAIL="$AUTHOR <$EMAIL>"

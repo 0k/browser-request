@@ -1,0 +1,41 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "esnext",
+        "moduleResolution": "node",
+        "declaration": true,
+        "removeComments": false,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "sourceMap": true,
+        "skipLibCheck": true,
+        "allowUnreachableCode": false,
+        "allowUnusedLabels": false,
+        "noEmitHelpers": true,
+        "noEmitOnError": false,
+        "noImplicitAny": false,
+        "noImplicitReturns": false,
+        "noImplicitUseStrict": false,
+        "noFallthroughCasesInSwitch": true,
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "lib": ["esnext", "dom"],
+        "baseUrl": ".",
+        "outDir": "build",
+        "paths": {
+            "*": ["src/types/*"]
+        }
+    },
+    "typedocOptions": {
+        "name": "LokAPI",
+        "includeVersion": true,
+        "readme": "./README.md",
+        "entryPoints": ["./src"],
+        "excludePrivate": true,
+        "excludeProtected": true,
+        "hideGenerator": true,
+        "out": "docs"
+    },
+    "include": ["src/**/*", "references.d.ts"],
+    "exclude": ["node_modules", "platforms", "**/angular"]
+}

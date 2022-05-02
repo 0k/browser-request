@@ -1,0 +1,31 @@
+{
+    "name": "@0k.io/browser-request",
+    "version": "%%version%%",
+    "description": "Browser request implementation",
+    "main": "build/index.js",
+    "types": "build/index.d.ts",
+    "scripts": {
+        "prepare": "tsc",
+        "lint": "eslint --ignore-path .gitignore --ext .js,.ts .",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Valentin LAB",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:Lokavaluto/node-request.git"
+    },
+    "devDependencies": {
+        "@0k.io/prettier": "^0.0.2",
+        "@types/node": "^15.12.2",
+        "@typescript-eslint/eslint-plugin": "^4.29.0",
+        "@typescript-eslint/parser": "^4.29.0",
+        "eslint": "^7.32.0",
+        "eslint-config-standard": "^16.0.3",
+        "typedoc": "^0.22.8",
+        "typescript": "^4.4.4"
+    },
+    "dependencies": {
+        "@0k.io/types-request": "^0.0.3"
+    }
+}
