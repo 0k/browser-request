@@ -1,0 +1,48 @@
+# -*- ispell-local-dictionary: "english" -*-
+
+#+TITLE: Browser httpRequest implementation
+
+This packages holds implementation of =HttpRequest= (from
+=0k.io/types-request=), a simple http request facility using
+the standard =fetch()= interface.
+
+This should work in any browser and WebView when run in android
+or iOS.
+
+
+* Adding =@0k.io/browser-request= to your project
+
+From the root of your project:
+
+#+begin_src sh
+npm install --save @0k.io/browser-request
+#+end_src
+
+Or better, as =browser-request= is still in early release,
+
+#+begin_src sh
+npm install --save 0k/browser-request#master
+#+end_src
+
+To be sure to get the latest version, relaunch this last command
+whenever you want to update.
+
+* Developer
+
+** Building the project from fresh clone
+
+#+begin_src sh
+npm install
+#+end_src
+
+** Transpilation to JavaScript
+
+#+begin_src sh
+npx tsc
+#+end_src
+
+or with watch support:
+
+#+begin_src sh
+npx tsc -w
+#+end_src
