@@ -43,8 +43,8 @@ const httpRequest = async (opts: t.coreHttpOpts) => {
     }
 
     if (opts.responseHeaders) {
-        for (const header in response.headers) {
-            opts.responseHeaders[header] = response.headers[header]
+        for (const [header, value] of response.headers) {
+            opts.responseHeaders[header] = value
         }
     }
 
