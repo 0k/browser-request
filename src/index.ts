@@ -14,7 +14,7 @@ const httpRequest = async (opts: t.coreHttpOpts) => {
 
     let url = `${opts.protocol}://${opts.host}`
     if (opts.port) url += `:${opts.port}`
-    if (opts.path) url += `/${opts.path}`
+    if (opts.path) url += `/${opts.path.replace(/^\//, '')}`
 
     const fetchOpts = {
         method: opts.method,
