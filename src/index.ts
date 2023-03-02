@@ -21,6 +21,7 @@ const httpRequest = async (opts: t.coreHttpOpts) => {
         ...(opts.headers && { headers: opts.headers }),
         ...(opts.port && { port: opts.port }),
         ...(opts.data && { body }),
+        ...(opts.timeout && { signal: AbortSignal.timeout(opts.timeout) }),
     }
 
     let response
