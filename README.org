@@ -10,12 +10,12 @@ This should work in any browser and WebView when run in android
 or iOS.
 
 
-* Adding =@0k.io/browser-request= to your project
+* Adding =@0k/browser-request= to your project
 
 From the root of your project:
 
 #+begin_src sh
-npm install --save @0k.io/browser-request
+npm install --save @0k/browser-request
 #+end_src
 
 Or better, as =browser-request= is still in early release,

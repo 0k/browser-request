@@ -1,4 +1,4 @@
-import { t, e } from "@0k.io/types-request"
+import { t, e } from "@0k/types-request"
 
 
 if (!AbortSignal.timeout) {
